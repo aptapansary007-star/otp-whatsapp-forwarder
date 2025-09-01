@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: ludo24-otp-backend
+    env: node
+    plan: free
+    region: singapore
+    branch: main
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      - key: PERSONAL_WHATSAPP_NUMBER
+        sync: false
+    healthCheckPath: /health
