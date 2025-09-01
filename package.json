@@ -1,0 +1,25 @@
+{
+  "name": "otp-whatsapp-forwarder",
+  "version": "1.0.0",
+  "description": "WhatsApp OTP forwarding service for Ludo24",
+  "main": "forward-whatsapp.js",
+  "scripts": {
+    "start": "node forward-whatsapp.js",
+    "dev": "nodemon forward-whatsapp.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "whatsapp-web.js": "^1.23.0",
+    "qrcode-terminal": "^0.12.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "keywords": ["whatsapp", "otp", "sms", "authentication"],
+  "author": "Ludo24",
+  "license": "MIT"
+}
